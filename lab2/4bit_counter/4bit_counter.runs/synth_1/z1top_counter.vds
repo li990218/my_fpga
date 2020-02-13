@@ -1,0 +1,309 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Jan 29 16:37:13 2020
+# Process ID: 14516
+# Current directory: D:/PDF/course/UCB/eecs151/fpga_labs_sp20/lab2/4bit_counter/4bit_counter.runs/synth_1
+# Command line: vivado.exe -log z1top_counter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source z1top_counter.tcl
+# Log file: D:/PDF/course/UCB/eecs151/fpga_labs_sp20/lab2/4bit_counter/4bit_counter.runs/synth_1/z1top_counter.vds
+# Journal file: D:/PDF/course/UCB/eecs151/fpga_labs_sp20/lab2/4bit_counter/4bit_counter.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source z1top_counter.tcl -notrace
+Command: synth_design -top z1top_counter -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 20404 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 409.391 ; gain = 96.898
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'z1top_counter' [D:/PDF/course/UCB/eecs151/fpga_labs_sp20/lab2/src/z1top_counter.v:4]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_CE' [D:/PDF/course/UCB/eecs151/fpga_labs_sp20/lib/EECS151.v:36]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_CE' (1#1) [D:/PDF/course/UCB/eecs151/fpga_labs_sp20/lib/EECS151.v:36]
+INFO: [Synth 8-6157] synthesizing module 'REGISTER_R' [D:/PDF/course/UCB/eecs151/fpga_labs_sp20/lib/EECS151.v:46]
+	Parameter N bound to: 27 - type: integer 
+	Parameter INIT bound to: 27'b000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'REGISTER_R' (2#1) [D:/PDF/course/UCB/eecs151/fpga_labs_sp20/lib/EECS151.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'z1top_counter' (3#1) [D:/PDF/course/UCB/eecs151/fpga_labs_sp20/lab2/src/z1top_counter.v:4]
+WARNING: [Synth 8-3917] design z1top_counter has port LEDS[5] driven by constant 0
+WARNING: [Synth 8-3917] design z1top_counter has port LEDS[4] driven by constant 0
+WARNING: [Synth 8-3331] design z1top_counter has unconnected port BUTTONS[3]
+WARNING: [Synth 8-3331] design z1top_counter has unconnected port BUTTONS[2]
+WARNING: [Synth 8-3331] design z1top_counter has unconnected port BUTTONS[1]
+WARNING: [Synth 8-3331] design z1top_counter has unconnected port BUTTONS[0]
+WARNING: [Synth 8-3331] design z1top_counter has unconnected port SWITCHES[1]
+WARNING: [Synth 8-3331] design z1top_counter has unconnected port SWITCHES[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 464.066 ; gain = 151.574
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 464.066 ; gain = 151.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 464.066 ; gain = 151.574
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/PDF/course/UCB/eecs151/fpga_labs_sp20/lab2/constraints/z1top_counter.xdc]
+Finished Parsing XDC File [D:/PDF/course/UCB/eecs151/fpga_labs_sp20/lab2/constraints/z1top_counter.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/PDF/course/UCB/eecs151/fpga_labs_sp20/lab2/constraints/z1top_counter.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/z1top_counter_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/z1top_counter_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 797.004 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 797.004 ; gain = 484.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 797.004 ; gain = 484.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 797.004 ; gain = 484.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 797.004 ; gain = 484.512
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module z1top_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+Module REGISTER_CE 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module REGISTER_R 
+Detailed RTL Component Info : 
++---Registers : 
+	               27 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design z1top_counter has port LEDS[5] driven by constant 0
+WARNING: [Synth 8-3917] design z1top_counter has port LEDS[4] driven by constant 0
+WARNING: [Synth 8-3331] design z1top_counter has unconnected port BUTTONS[3]
+WARNING: [Synth 8-3331] design z1top_counter has unconnected port BUTTONS[2]
+WARNING: [Synth 8-3331] design z1top_counter has unconnected port BUTTONS[1]
+WARNING: [Synth 8-3331] design z1top_counter has unconnected port BUTTONS[0]
+WARNING: [Synth 8-3331] design z1top_counter has unconnected port SWITCHES[1]
+WARNING: [Synth 8-3331] design z1top_counter has unconnected port SWITCHES[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 797.004 ; gain = 484.512
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 815.207 ; gain = 502.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 834.496 ; gain = 522.004
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 834.496 ; gain = 522.004
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 834.496 ; gain = 522.004
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 834.496 ; gain = 522.004
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 834.496 ; gain = 522.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 834.496 ; gain = 522.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 834.496 ; gain = 522.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 834.496 ; gain = 522.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     7|
+|3     |LUT1   |     2|
+|4     |LUT2   |     1|
+|5     |LUT3   |     2|
+|6     |LUT4   |     1|
+|7     |LUT5   |     1|
+|8     |LUT6   |     4|
+|9     |FDRE   |    31|
+|10    |IBUF   |     1|
+|11    |OBUF   |     6|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------+------------+------+
+|      |Instance          |Module      |Cells |
++------+------------------+------------+------+
+|1     |top               |            |    57|
+|2     |  count_add       |REGISTER_R  |    41|
+|3     |  led_counter_reg |REGISTER_CE |     8|
++------+------------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 834.496 ; gain = 522.004
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 834.496 ; gain = 189.066
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 834.496 ; gain = 522.004
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+18 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 840.379 ; gain = 540.523
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/PDF/course/UCB/eecs151/fpga_labs_sp20/lab2/4bit_counter/4bit_counter.runs/synth_1/z1top_counter.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file z1top_counter_utilization_synth.rpt -pb z1top_counter_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 840.379 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 29 16:37:47 2020...

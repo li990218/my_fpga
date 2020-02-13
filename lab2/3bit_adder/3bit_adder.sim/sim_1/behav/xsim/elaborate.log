@@ -1,0 +1,19 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ef4fc23ab6854c4596f33e97c63da716 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim1_behav xil_defaultlib.sim1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/PDF/course/UCB/eecs151/fpga_labs_sp20/lab2/src/structural_adder.v" Line 1. Module structural_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/PDF/course/UCB/eecs151/fpga_labs_sp20/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/PDF/course/UCB/eecs151/fpga_labs_sp20/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/PDF/course/UCB/eecs151/fpga_labs_sp20/lab2/src/full_adder.v" Line 1. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.structural_adder
+Compiling module xil_defaultlib.z1top_adder
+Compiling module xil_defaultlib.sim1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim1_behav

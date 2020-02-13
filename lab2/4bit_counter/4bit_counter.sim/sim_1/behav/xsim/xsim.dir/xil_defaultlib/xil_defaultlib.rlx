@@ -1,0 +1,8 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+D:/PDF/course/UCB/eecs151/fpga_labs_sp20/lab2/4bit_counter/4bit_counter.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+D:/PDF/course/UCB/eecs151/fpga_labs_sp20/lab2/4bit_counter/4bit_counter.srcs/sim_1/new/sim1.v,1580340061,verilog,,,,sim1,,,,,,,,
+D:/PDF/course/UCB/eecs151/fpga_labs_sp20/lab2/src/z1top_counter.v,1580343851,verilog,,D:/PDF/course/UCB/eecs151/fpga_labs_sp20/lab2/4bit_counter/4bit_counter.srcs/sim_1/new/sim1.v,D:/PDF/course/UCB/eecs151/fpga_labs_sp20/lib/EECS151.v,z1top_counter,,,,,,,,
+D:/PDF/course/UCB/eecs151/fpga_labs_sp20/lib/EECS151.v,1580266699,verilog,,,,RAM;REGISTER;REGISTER_CE;REGISTER_R;REGISTER_R_CE,,,,,,,,

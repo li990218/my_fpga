@@ -1,0 +1,9 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PDF/course/UCB/eecs151/fpga_labs_sp20/lab2/src/z1top_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGISTER
+INFO: [VRFC 10-311] analyzing module REGISTER_CE
+INFO: [VRFC 10-311] analyzing module REGISTER_R
+INFO: [VRFC 10-311] analyzing module REGISTER_R_CE
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-311] analyzing module z1top_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PDF/course/UCB/eecs151/fpga_labs_sp20/lab2/4bit_counter/4bit_counter.srcs/sim_1/new/sim1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim1

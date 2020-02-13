@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PDF/course/UCB/eecs151/fpga_labs_sp20/lab2/src/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PDF/course/UCB/eecs151/fpga_labs_sp20/lab2/src/structural_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module structural_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PDF/course/UCB/eecs151/fpga_labs_sp20/lab2/src/z1top_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module z1top_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PDF/course/UCB/eecs151/fpga_labs_sp20/lab2/3bit_adder/3bit_adder.srcs/sim_1/new/sim1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim1
